@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Logo/>
-      <Searchbar/>
+      <Searchbar placeholder={"Search a album of your choice"}/>
       <Button children="Give Feedback"/>
     </nav>
   )
