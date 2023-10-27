@@ -4,6 +4,7 @@ import{useEffect, useState} from 'react';
 import {fetchTopAlbums} from "./api/api";
 import Navbar from "./components/navbar/navbar";
 import Card from "./components/Card/card";
+import Section from "./components/section/section";
 function App() {
   const [topAlbumData, setTopAlbumData]=useState([]);
 
@@ -19,13 +20,9 @@ function App() {
     <div>
      <Navbar/>
      <Hero/>
-     {
-      topAlbumData.map((item)=>{
-        return(
-          <Card data={item} type="album"/>
-        )
-      })
-     }
+     <div>
+      <Section data={topAlbumData} type="album" title="Top Album"/>
+     </div>
     </div>
   );
 }
