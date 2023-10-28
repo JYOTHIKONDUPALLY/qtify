@@ -21,7 +21,12 @@ swiper.slideTo(0, null);
 const Carousel = ({data, renderComponent}) => {
   return (
     <div className={styles.wrapper}>
-        <Swiper style={{padding:"0px 20px"}} initialSlide={0} modules={[Navigation]} slidesPerView={"auto"} spaceBetween={40} allowTouchMove>
+        <Swiper style={{padding:"0px 20px"}} 
+        initialSlide={0}
+         modules={[Navigation]} 
+         slidesPerView={"auto"} 
+         spaceBetween={40} 
+         allowTouchMove>
 <Controls data={data}/>
 <CarouselLeftNavigation/>
 <CarouselRightNavigation/>
